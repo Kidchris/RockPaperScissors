@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="final-logoBlack.jpg" type="image/jpg" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Rock - Paper - Scissors</h1>
+      <p>There will be a total of 5 rounds</p>
+    </div>
+    <div id="score-div">
+      <h2 id="score-text">SCORE</h2>
+      <div id="score-section">
+        <h1 class="score-user">
+          <span id='user-score'> 0</span>
+          <sub id="user">User  </sub>
+        </h1>
+        <h1 class="score-computer"> <span id="comp-score"> 0 </span>
+          <sub id="computer"> Comp</sub>
+        </h1>
+      </div>
+    </div>
+    <div class="container-images">
+      <h2 id="result">👨 PICK ONE 🤖 </h2>
+      <div class="div-images">
+        <span>
+          <img id="img" class="rock" src="rock.png" alt="R" />
+          <p>Rock</p>
+        </span>
+        <span>
+          <img id="img" class="paper" src="paper.png" alt="P" />
+          <p>Paper</p>
+        </span>
+        <span>
+          <img id="img" class="scissors" src="scissors.png" alt="S" />
+          <p>Scissors</p>
+        </span>
+      </div>
+    </div>
+<p id="end">rps</p>
+    <script src="app.js"></script>
+  </body>
+</html>

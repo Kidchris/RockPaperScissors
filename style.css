@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+body {
+  margin: 0px;
+  background-color: blanchedalmond;
+}
+
+#header {
+  text-align: center;
+  padding: 1px;
+  background-color: #000;
+  top: 0px;
+  margin-right: 0px;
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  word-spacing: 5px;
+}
+#header > p {
+  font-family: "Parisienne", cursive;
+}
+
+#header > h1 {
+  letter-spacing: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(241, 117, 0);
+  font-family: "Permanent Marker", cursive;
+}
+
+#score-div {
+  text-align: center;
+}
+#score-text{
+  margin: 0px;
+}
+#score-section {
+ width: 245px;
+  height: 150px;
+  border-radius: 10px;
+  border: 10px solid #144d32;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: auto;
+}
+.score-user {
+  text-align: center;
+  margin-right: 15px;
+  color: #fff;
+  background: #2d2d2d;
+  padding: 12px;
+}
+
+.score-computer {
+  text-align: center;
+  margin-left: 15px;
+  color: #fff;
+  background: #2d2d2d;
+  padding: 12px;
+}
+
+#img {
+  margin: 10px;
+  border-radius: 50%;
+  border: 9px solid white;
+  height: 90px;
+  width: 90px;
+  text-align: center;
+}
+
+.div-images {
+  display: flex;
+  margin: px;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+p{
+  text-align: center;
+  margin-left: 10px;
+
+}
+
+#end{
+  display: none;
+}
+.win{
+  margin: 10px;
+  border-radius: 50%;
+  border: 9px solid rgba(61, 179, 26, 0.925);
+  box-shadow: 0 0 10px rgb(14, 219, 168);
+  height: 90px;
+  width: 90px;
+  text-align: center;
+  background-color:rgb(247, 252, 248);
+}
+.loose{margin: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgb(226, 10, 21);
+  border: 9px solid rgba(247, 10, 10, 0.925);
+  height: 90px;
+  width: 90px;
+  text-align: center;
+  background-color:rgb(255, 253, 253);
+}
+.draw{margin: 10px;
+  border-radius: 50%;
+  border: 9px solid rgba(20, 22, 19, 0.925);
+  height: 90px;
+  width: 90px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  text-align: center;
+  background-color:rgb(248, 248, 248);
+}
