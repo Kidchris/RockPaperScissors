@@ -9,9 +9,10 @@ var scoreHuman = 0;
 var scoreRobot = 0;
 
 let wordsListe = ["R", "P", "S"];
-let compChoice = Math.floor(Math.random() * 3);
+// let compChoice = Math.floor(Math.random() * 3);
+// console.log(compChoice)
 
-function game(userChoice, compChoice) {
+function game(userChoice, compChoice = wordsListe[Math.floor(Math.random() * 3)]) {
   let choices = userChoice + compChoice;
   switch (choices) {
     case "RS":
@@ -129,13 +130,13 @@ function game(userChoice, compChoice) {
 }
 
 rock.addEventListener("click", function () {
-  game("R", wordsListe[compChoice]);
+  game("R");
 });
 paper.addEventListener("click", function () {
-  game("P", wordsListe[compChoice]);
+  game("P");
 });
 scissors.addEventListener("click", function () {
-  game("S", wordsListe[compChoice]);
+  game("S");
 });
 
 function end() {
@@ -143,7 +144,7 @@ function end() {
     alert('⚠ End of the game ⛔  Press "F5" to reload!!  🔂 ');
     scoreRobot = 0;
     scoreHuman = 0;
-    comptScore.innerHTML = scoreRobot;
+    comptScore.innerHTML = scoreRobot;z
     userScore.innerHTML = scoreHuman;
   }
 }
